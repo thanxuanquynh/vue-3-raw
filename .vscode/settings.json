@@ -1,0 +1,24 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "node_modules": true,
+    "script": true,
+    "package-lock.json": true,
+    "yarn.lock": true,
+    "build": true,
+    "dist": true
+  },
+  "eslint.codeActionsOnSave.mode": "problems",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": false
+  },
+  "eslint.run": "onSave",
+  "eslint.format.enable": true
+}
