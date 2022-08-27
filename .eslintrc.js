@@ -35,6 +35,7 @@ module.exports = {
         trailingComma: "es5",
         useTabs: false,
         vueIndentScriptAndStyle: true,
+        endOfLine: "crlf",
       },
     ],
     "space-before-function-paren": "off",
