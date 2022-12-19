@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  frontend: 
+    build: .
+    image: 'vue_frontend'
+    container_name: "vue_frontend"
+    network_mode: "bridge"
+    volumes: 
+      - ./:/workspace/vue_frontend
+    ports:
+      - 3000:3000
+    entrypoint: /bin/sh -c
+    command: 
+      - |
+        yarn
+        yarn dev --port 3000 --host

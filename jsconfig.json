@@ -2,6 +2,7 @@
   "compilerOptions": {
     "jsx": "preserve",
     "baseUrl": ".",
+    "allowJs": true,
     "paths": {
       "@/*": [
         "src/*"

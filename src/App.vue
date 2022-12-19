@@ -1,18 +1,16 @@
 <script setup>
-  import { RouterLink, RouterView } from "vue-router"
+  const isDark = useDark()
+  const toggleDark = useToggle(isDark)
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-  </header>
-  <br />
+  <div flex justify-between p-10>
+    <button i="dark:carbon-moon carbon-sun" @click="toggleDark()" text-3xl />
+  </div>
   <RouterView />
 </template>
 <style>
   html.dark {
-    background: #222;
-    color: white;
     color-scheme: dark;
   }
 </style>

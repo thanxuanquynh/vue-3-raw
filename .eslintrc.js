@@ -13,7 +13,7 @@ module.exports = {
     ecmaVersion: "latest",
   },
   rules: {
-    "linebreak-style": 0,
+    "linebreak-style": "off",
     "object-curly-spacing": "off",
     "prettier/prettier": [
       "warn",
