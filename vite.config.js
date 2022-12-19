@@ -35,4 +35,11 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
+  // https://github.com/vitejs/vite/issues/1153#issuecomment-785467271
+  // fix HRM windows docker and wsl
+  server: {
+    watch: {
+      usePolling: true
+    }
+  }
 })
