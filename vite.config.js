@@ -38,8 +38,11 @@ export default defineConfig({
   // https://github.com/vitejs/vite/issues/1153#issuecomment-785467271
   // fix HRM windows docker and wsl
   server: {
+    hmr: true,
+    host: '0.0.0.0',
     watch: {
-      usePolling: true
+      interval: 100,
+      usePolling: true,
     }
-  }
+  },
 })
